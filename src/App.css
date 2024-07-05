@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Elektronik";
+  src: url("https://db.onlinewebfonts.com/t/47eff175aa6c76c30cba7a3d2e11480b.eot");
+  src: url("https://db.onlinewebfonts.com/t/47eff175aa6c76c30cba7a3d2e11480b.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/47eff175aa6c76c30cba7a3d2e11480b.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/47eff175aa6c76c30cba7a3d2e11480b.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/47eff175aa6c76c30cba7a3d2e11480b.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/47eff175aa6c76c30cba7a3d2e11480b.svg#Elektronik")format("svg");
+}
+
+@font-face {
+  font-family: "electrical";
+  src: url("https://db.onlinewebfonts.com/t/fcfdd2ded1fd53686a3ff00a019bbe0b.eot");
+  src: url("https://db.onlinewebfonts.com/t/fcfdd2ded1fd53686a3ff00a019bbe0b.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/fcfdd2ded1fd53686a3ff00a019bbe0b.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/fcfdd2ded1fd53686a3ff00a019bbe0b.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/fcfdd2ded1fd53686a3ff00a019bbe0b.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/fcfdd2ded1fd53686a3ff00a019bbe0b.svg#electrical")format("svg");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+.font-electrical {
+  font-family: 'electrical';
+}
+
+.font-elektronik{
+  font-family: 'Elektronik'
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+
+.homepage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.play-button:hover {
+  animation: pulse 0.5s infinite;
+  background-color: white;
+}
+
+/* styles.css */
+.text-black-hover-yellow:hover {
+  color: yellow;
+}
+
+/* App.css ou Zenitsu.css */
+#zenitsu {
+  background-image: url('/path/to/your/zenitsu.png'); /* Assurez-vous que le chemin est correct */
+  /* background-position: top center; */
+  background-size: cover; /* Couvre toute la section */
+  background-repeat: no-repeat; /* Évite la répétition de l'image */
+  background-attachment: fixed; /* Fixe l'image lors du défilement */
+  height: 100vh; /* Hauteur de la section à 100% de la vue */
+}
+
+
+
