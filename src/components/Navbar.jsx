@@ -67,14 +67,14 @@ function Navbar() {
           <div className='flex flex-col text-[25px] pt-[90px] m-9 space-y-6'>
             <a href="#home" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Home</a>
             <a href="#zenitsu" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Zenitsu</a>
-            <a href="#mountnagatumo" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Mount Nagatumo</a>
-            <a href="#arc2" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Arc 2: Spider</a>
-            <a href="#train" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Train de l'Infini</a>
-            <a href="#arc3" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Arc 3: Quartier du Plaisir</a>
-            <a href="#arc4" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Arc 4: Entraînement du Pillier</a>
-            <a href="#infinite-castle" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Infinite Castle</a>
+            <a href="#thunderbreathing" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Thunder Breathing</a>
+            <a href="#arc2" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Nichirin Katana</a>
+            <a href="#train" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Infity Train</a>
+            <a href="#arc3" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500"> Entertainment District arc</a>
+            <a href="#arc4" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Hashira Training Arc</a>
+            <a href="#infinite-castle" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Infinity Castle</a>
           </div>
-          <div className='absolute bottom-8 text-[75px] right-4 text-black text-lg'>
+          <div className='absolute bottom-8 text-[95px] right-4 text-black text-lg'>
             <span>@mamitiana</span>
           </div>
         </div>

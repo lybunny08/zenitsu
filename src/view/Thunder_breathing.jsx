@@ -5,7 +5,7 @@ import move from '../assets/zenitsu-move.png';
 import imageToAnimate from '../assets/1.png';
 import '../App.css';
 
-function MountNagatumo() {
+function ThunderBreath() {
     // Déclaration des états pour stocker la position de défilement et le statut de l'animation
     const [scrollPosition, setScrollPosition] = useState(0);
     const [startAnimation, setStartAnimation] = useState(false);
@@ -16,7 +16,7 @@ function MountNagatumo() {
             const position = window.pageYOffset; // Obtenir la position de défilement verticale
             setScrollPosition(position); // Mettre à jour la position de défilement dans l'état
 
-            // Vérifier si l'utilisateur a atteint la section MountNagatumo
+            // Vérifier si l'utilisateur a atteint la section ThunderBreath
             if (sectionRef.current) {
                 const sectionRect = sectionRef.current.getBoundingClientRect();
                 const viewportHeight = window.innerHeight;
@@ -111,4 +111,4 @@ function MountNagatumo() {
     );
 }
 
-export default MountNagatumo;
+export default ThunderBreath;

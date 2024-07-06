@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Zenitsu from './view/Zenitsu';
 import bg_zenitsu from './assets/bg-zenitsu.jfif';
 import moon from './assets/videos/moon.gif';
-import MountNagatumo from './view/MountNagatumo';
+import ThunderBreathing from './view/Thunder_breathing';
 import Footer from './view/Footer';
 
 function App() {
@@ -21,10 +21,10 @@ function App() {
         />
         <div id='zenitsu' className='absolute flex flex-col top-[550px] left-0 w-full z-20'>
           <Zenitsu />
-          <div id='mountnagatumo' className="relative">
+          <div id='thunderbreathing' className="relative">
             <img src={moon} alt="Moon" className='w-full'/>
             <div className="absolute top-0 left-0 w-full h-full z-30">
-              <MountNagatumo />
+              <ThunderBreathing />
             </div>
             <Footer />
           </div>
