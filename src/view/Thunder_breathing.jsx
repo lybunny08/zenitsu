@@ -5,7 +5,7 @@ import move from '../assets/zenitsu-move.png';
 import imageToAnimate from '../assets/1.png';
 import '../App.css';
 
-function ThunderBreath() {
+function ThunderBreathing() {
     // Déclaration des états pour stocker la position de défilement et le statut de l'animation
     const [scrollPosition, setScrollPosition] = useState(0);
     const [startAnimation, setStartAnimation] = useState(false);
@@ -16,7 +16,7 @@ function ThunderBreath() {
             const position = window.pageYOffset; // Obtenir la position de défilement verticale
             setScrollPosition(position); // Mettre à jour la position de défilement dans l'état
 
-            // Vérifier si l'utilisateur a atteint la section ThunderBreath
+            // Vérifier si l'utilisateur a atteint la section ThunderBreathing
             if (sectionRef.current) {
                 const sectionRect = sectionRef.current.getBoundingClientRect();
                 const viewportHeight = window.innerHeight;
@@ -55,7 +55,7 @@ function ThunderBreath() {
 
     return (
         <div className='flex flex-row relative overflow-hidden' ref={sectionRef}>
-            <div className='absolute flex flex-row w-full justify-between text-white font-bold opacity-40 text-[70px] px-4 pt-[80px]'>
+            <div className='absolute flex flex-row w-full justify-between text-white font-bold opacity-40 text-[70px] px-4 pt-[30px]'>
                 <div className='flex flex-col'>
                     <p>我</p>
                     <p>あ</p>
@@ -74,8 +74,8 @@ function ThunderBreath() {
                 </div>
             </div>
             <div className='ml-[100px]'>
-                <h1 className='font-elektronik text-white text-[80px] pt-[60px] z-10 relative'>Thunder breath style</h1>
-                <p className='text-left text-white max-w-lg pt-[50px]'>Zenitsu uses the Lightning Breath as his fighting technique. 
+                <h1 className='font-elektronik text-white text-[25px] lg:text-[80px] pt-[60px] z-10 relative'>Lightning breath style</h1>
+                <p className='text-left text-white lg:max-w-lg pt-[50px]'>Zenitsu uses the Lightning Breath as his fighting technique. 
                 He only knows how to make the first move, but manages to outmaneuver his enemies.
                 </p>
                 <div className='flex flex-row space-x-4'>
@@ -93,17 +93,17 @@ function ThunderBreath() {
                     />
                 </div>
             </div>
-            <img src={move} alt="" />
+            <img src={move} alt="zenitsu pose as partisans" />
             <img 
                 src={imageToAnimate} 
                 alt="Animated on scroll" 
                 style={{
-                    position: 'absolute', // Positionnement absolu pour permettre le déplacement
-                    bottom: 0, // Positionner en bas
+                    position: 'absolute', 
+                    bottom: 0, 
                     right:0,
                     left: `${100 - imagePosition}%`, // Déplacer l'image de droite à gauche
-                    transform: 'translateX(0%)', // Centrer l'image horizontalement
-                    transition: 'left 0.001s ease-out', // Transition douce pour le mouvement
+                    transform: 'translateX(0%)', 
+                    transition: 'left 0.001s ease-out', 
                 }}
                 className="w-[800px] h-auto z-20"
             />
@@ -111,4 +111,4 @@ function ThunderBreath() {
     );
 }
 
-export default ThunderBreath;
+export default ThunderBreathing;

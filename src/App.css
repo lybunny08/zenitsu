@@ -42,6 +42,18 @@ html, body, #root {
   margin: 0;
 }
 
+.footer-container {
+  background-color: white;
+  background-image: repeating-conic-gradient(
+    rgba(240, 206, 16, 0.15) 0% 0.05%,
+    transparent 0% 0.1%
+  );
+}
+
+.footer-content {
+  /* Vos styles actuels pour le contenu du footer */
+}
+
 
 .homepage {
   width: 100%;

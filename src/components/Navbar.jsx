@@ -68,13 +68,13 @@ function Navbar() {
             <a href="#home" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Home</a>
             <a href="#zenitsu" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Zenitsu</a>
             <a href="#thunderbreathing" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Thunder Breathing</a>
-            <a href="#arc2" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Nichirin Katana</a>
-            <a href="#train" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Infity Train</a>
-            <a href="#arc3" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500"> Entertainment District arc</a>
-            <a href="#arc4" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Hashira Training Arc</a>
-            <a href="#infinite-castle" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Infinity Castle</a>
+            <a href="#relations" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Relations avec les autres personnages</a>
+            <a href="#train" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Évolution dans l'histoire</a>
+            <a href="#arc3" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500"> Anecdotes et faits intéressants</a>
+            {/* <a href="#arc4" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Hashira Training Arc</a>
+            <a href="#infinite-castle" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Infinity Castle</a> */}
           </div>
-          <div className='absolute bottom-8 text-[95px] right-4 text-black text-lg'>
+          <div className='absolute bottom-8 text-[65px] right-4 text-black text-lg'>
             <span>@mamitiana</span>
           </div>
         </div>

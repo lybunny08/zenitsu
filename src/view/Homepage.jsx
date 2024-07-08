@@ -8,9 +8,13 @@ import '../App.css';
 function HomePage() {
   return (
     
-    <div className="homepage relative 2xl:xl:lg:sm:md:flex-row h-screen w-full">
+    <div className="homepage relative flex-row h-screen w-full">
       {/* Bandeau de texte en haut */}
-      <img src={logo} alt="Logo" className='absolute m-2 w-[90px] h-[90px] z-10' />
+      <img 
+        src={logo} 
+        alt="Logo" 
+        className="absolute m-2 w-[50px] h-[50px] sm:w-[90px] sm:h-[90px] z-10" 
+      />
 
       {/* Partie gauche */}
       <div className="flex-1 bg-black flex pt-[80px] min-h-[50vh] md:min-h-screen">

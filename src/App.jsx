@@ -17,16 +17,16 @@ function App() {
         <img 
           src={bg_zenitsu} 
           alt="Zenitsu Pose" 
-          className="w-full h-[1100px] absolute top-[580px] left-0 opacity-10 z-10 object-cover"
+          className="w-full h-[1100px] absolute top-[280px] md:top-[580px] lg:top-[600px] left-0 opacity-10 z-10 object-cover"
         />
-        <div id='zenitsu' className='absolute flex flex-col top-[550px] left-0 w-full z-20'>
+        <div id='zenitsu' className='absolute flex flex-col top-[350px] md:top-[680px] lg:top-[550px] left-0 w-full z-20'>
           <Zenitsu />
-          <div id='thunderbreathing' className="relative">
-            <img src={moon} alt="Moon" className='w-full'/>
+          <div id='thunderbreathing' className="relative lg:top-[100px] ">
+            <img src={moon} alt="Moon" className='w-full h-screen lg:h-[700px] '/>
             <div className="absolute top-0 left-0 w-full h-full z-30">
               <ThunderBreathing />
             </div>
-            <Footer />
+            {/* <Footer /> */}
           </div>
         </div>
           
