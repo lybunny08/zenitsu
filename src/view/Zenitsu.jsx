@@ -3,12 +3,21 @@ import pose from '../assets/pose as partisant.webp';
 import video from '../assets/videos/how zenitsu hair turn into yellow.mp4'
 import zenitsu_group from '../assets/zenitsu_group.jpg';
 import world from '../assets/world.gif';
+import bg_zenitsu from '../assets/bg-zenitsu.jfif';
 import '../App.css';
+
 
 function Zenitsu() {
 
   return (
-    <div className="relative flex flex-col h-screen lg:pt-[150px]">
+    <div className="relative flex flex-col h-screen lg:pt-[150px] "
+    // style={{ backgroundImage: `url(${bg_zenitsu})`,
+    //         backgroundSize: 'cover', // or 'contain' depending on your need
+    //         backgroundPosition: 'center', // adjust as needed
+    //         backgroundRepeat: 'no-repeat',
+    //         opacity:0.8,
+    //         height: '120vh', }}
+             >
 
       {/* Contenu au-dessus de l'image de fond */}
       <div className="relative flex flex-col text-center">

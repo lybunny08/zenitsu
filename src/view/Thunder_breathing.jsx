@@ -3,6 +3,8 @@ import clapping from '../assets/zenitsu_thunder_clapping.gif';
 import vsspider from '../assets/videos/Zenitsu vs Spider demon.mp4';
 import move from '../assets/zenitsu-move.png';
 import imageToAnimate from '../assets/1.png';
+// import moon from './assets/videos/moon.gif';
+import moon from '../assets/videos/moon.gif';
 import '../App.css';
 
 function ThunderBreathing() {
@@ -54,7 +56,15 @@ function ThunderBreathing() {
     const imagePosition = calculateImagePosition(); // Obtenir la position calculée de l'image
 
     return (
-        <div className='flex flex-row relative overflow-hidden' ref={sectionRef}>
+        <div 
+            className="flex flex-row relative overflow-hidden bg-cover bg-center" 
+            ref={sectionRef}
+            style={{ backgroundImage: `url(${moon})`,
+            backgroundSize: 'cover', // or 'contain' depending on your need
+            backgroundPosition: 'center', // adjust as needed
+            backgroundRepeat: 'no-repeat',
+            height: '110vh', }}
+        >
             <div className='absolute flex flex-row w-full justify-between text-white font-bold opacity-40 text-[70px] px-4 pt-[30px]'>
                 <div className='flex flex-col'>
                     <p>我</p>
@@ -74,7 +84,7 @@ function ThunderBreathing() {
                 </div>
             </div>
             <div className='ml-[100px]'>
-                <h1 className='font-elektronik text-white text-[25px] lg:text-[80px] pt-[60px] z-10 relative'>Lightning breath style</h1>
+                <h1 className='font-elektronik text-white text-[25px] lg:max-w-lg lg:text-[80px] pt-[60px] z-10 relative'>Lightning breath style</h1>
                 <p className='text-left text-white lg:max-w-lg pt-[50px]'>Zenitsu uses the Lightning Breath as his fighting technique. 
                 He only knows how to make the first move, but manages to outmaneuver his enemies.
                 </p>
@@ -93,7 +103,7 @@ function ThunderBreathing() {
                     />
                 </div>
             </div>
-            <img src={move} alt="zenitsu pose as partisans" />
+            <img src={move} alt="zenitsu slay" />
             <img 
                 src={imageToAnimate} 
                 alt="Animated on scroll" 
