@@ -59,10 +59,10 @@ function ThunderBreathing() {
             }}
         >
             <div className='absolute flex flex-row w-full justify-between text-white font-bold opacity-40 text-2xl sm:text-4xl lg:text-[70px] px-2 sm:px-4 pt-4 sm:pt-[30px]'>
-                <div className='flex flex-col'>
+                <div className='flex flex-col lg:space-y-20 lg:pt-14'>
                     <p>我</p><p>あ</p><p>が</p><p>妻</p><p>つ</p><p>ま</p>
                 </div>
-                <div className='flex flex-col'>
+                <div className='flex flex-col lg:space-y-20 lg:pt-14'>
                     <p>善</p><p>ぜ</p><p>ん</p><p>逸</p><p>い</p><p>つ</p>
                 </div>
             </div>
