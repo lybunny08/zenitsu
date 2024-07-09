@@ -64,17 +64,15 @@ function Navbar() {
       {isMenuOpen && (
         <div className="fixed inset-0 flex flex-col z-40 bg-white bg-opacity-75 backdrop-blur-md transition-transform duration-500 ease-in-out">
           <img src={logo} alt="" className='absolute m-2 w-[90px] h-[90px]' />
-          <div className='flex flex-col text-[25px] pt-[90px] m-9 space-y-6'>
-            <a href="#home" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Home</a>
+          <div className='flex flex-col text-[25px] pt-[100px] lg:pt-[150px] m-9 space-y-6'>
+            <a href="#homepage" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Home</a>
             <a href="#zenitsu" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Zenitsu</a>
             <a href="#thunderbreathing" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Thunder Breathing</a>
-            <a href="#relations" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Relations avec les autres personnages</a>
-            <a href="#train" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Évolution dans l'histoire</a>
-            <a href="#arc3" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500"> Anecdotes et faits intéressants</a>
+            <a href="#facts" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Interesting facts</a>
             {/* <a href="#arc4" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Hashira Training Arc</a>
             <a href="#infinite-castle" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Infinity Castle</a> */}
           </div>
-          <div className='absolute bottom-8 text-[65px] right-4 text-black text-lg'>
+          <div className='absolute bottom-8 text-[45px] lg:text-[95px] right-4 text-black text-lg'>
             <span>@mamitiana</span>
           </div>
         </div>

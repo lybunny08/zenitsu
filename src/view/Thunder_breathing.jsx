@@ -3,119 +3,102 @@ import clapping from '../assets/zenitsu_thunder_clapping.gif';
 import vsspider from '../assets/videos/Zenitsu vs Spider demon.mp4';
 import move from '../assets/zenitsu-move.png';
 import imageToAnimate from '../assets/1.png';
-// import moon from './assets/videos/moon.gif';
 import moon from '../assets/videos/moon.gif';
 import '../App.css';
 
 function ThunderBreathing() {
-    // Déclaration des états pour stocker la position de défilement et le statut de l'animation
     const [scrollPosition, setScrollPosition] = useState(0);
     const [startAnimation, setStartAnimation] = useState(false);
-    const sectionRef = useRef(null); // Référence pour la section
+    const sectionRef = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => {
-            const position = window.pageYOffset; // Obtenir la position de défilement verticale
-            setScrollPosition(position); // Mettre à jour la position de défilement dans l'état
+            const position = window.pageYOffset;
+            setScrollPosition(position);
 
-            // Vérifier si l'utilisateur a atteint la section ThunderBreathing
             if (sectionRef.current) {
                 const sectionRect = sectionRef.current.getBoundingClientRect();
                 const viewportHeight = window.innerHeight;
                 if (sectionRect.top <= viewportHeight) {
-                    setStartAnimation(true); // Démarrer l'animation si la section est visible
+                    setStartAnimation(true);
                 }
             }
         };
 
-        // Ajouter l'écouteur d'événements de défilement
         window.addEventListener('scroll', handleScroll, { passive: true });
 
         return () => {
-            // Supprimer l'écouteur d'événements lors du nettoyage
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
-    // Fonction pour calculer la position de l'image
     const calculateImagePosition = () => {
-        if (!sectionRef.current || !startAnimation) return 0; // Retourner 0 si la section n'est pas référencée ou l'animation n'a pas commencé
+        if (!sectionRef.current || !startAnimation) return 0;
 
         const sectionRect = sectionRef.current.getBoundingClientRect();
         const viewportHeight = window.innerHeight;
 
-        // Calculer le pourcentage visible de la section
         const visiblePercentage = Math.max(0, Math.min(100, 
             ((viewportHeight - sectionRect.top) / (viewportHeight + sectionRect.height)) * 100
         ));
 
-        // Transformer ce pourcentage en une position de 0 à 100 pour le déplacement horizontal
         return visiblePercentage;
     };
 
-    const imagePosition = calculateImagePosition(); // Obtenir la position calculée de l'image
+    const imagePosition = calculateImagePosition();
 
     return (
         <div 
-            className="flex flex-row relative overflow-hidden bg-cover bg-center" 
+            className="flex flex-col lg:flex-row relative overflow-hidden bg-cover bg-center min-h-screen"
             ref={sectionRef}
-            style={{ backgroundImage: `url(${moon})`,
-            backgroundSize: 'cover', // or 'contain' depending on your need
-            backgroundPosition: 'center', // adjust as needed
-            backgroundRepeat: 'no-repeat',
-            height: '110vh', }}
+            style={{ 
+                backgroundImage: `url(${moon})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+            }}
         >
-            <div className='absolute flex flex-row w-full justify-between text-white font-bold opacity-40 text-[70px] px-4 pt-[30px]'>
+            <div className='absolute flex flex-row w-full justify-between text-white font-bold opacity-40 text-2xl sm:text-4xl lg:text-[70px] px-2 sm:px-4 pt-4 sm:pt-[30px]'>
                 <div className='flex flex-col'>
-                    <p>我</p>
-                    <p>あ</p>
-                    <p>が</p>
-                    <p>妻</p>
-                    <p>つ</p>
-                    <p>ま</p>
+                    <p>我</p><p>あ</p><p>が</p><p>妻</p><p>つ</p><p>ま</p>
                 </div>
                 <div className='flex flex-col'>
-                    <p>善</p>
-                    <p>ぜ</p>
-                    <p>ん</p>
-                    <p>逸</p>
-                    <p>い</p>
-                    <p>つ</p>
+                    <p>善</p><p>ぜ</p><p>ん</p><p>逸</p><p>い</p><p>つ</p>
                 </div>
             </div>
-            <div className='ml-[100px]'>
-                <h1 className='font-elektronik text-white text-[25px] lg:max-w-lg lg:text-[80px] pt-[60px] z-10 relative'>Lightning breath style</h1>
-                <p className='text-left text-white lg:max-w-lg pt-[50px]'>Zenitsu uses the Lightning Breath as his fighting technique. 
-                He only knows how to make the first move, but manages to outmaneuver his enemies.
+            <div className='px-4 lg:ml-[100px] lg:w-1/2 z-10'>
+                <h1 className='font-elektronik text-white text-3xl sm:text-5xl lg:text-[80px] pt-[90px] relative'>Lightning breath style</h1>
+                <p className='text-left text-white text-sm sm:text-base lg:text-lg pt-4 sm:pt-[50px]'>
+                    Zenitsu uses the Lightning Breath as his fighting technique. 
+                    He only knows how to make the first move, but manages to outmaneuver his enemies.
                 </p>
-                <div className='flex flex-row space-x-4'>
+                <div className='flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-4'>
                     <video 
                         src={vsspider} 
                         autoPlay 
                         loop 
                         muted 
                         playsInline
-                        className='w-[270px] border border-white max-w-[560px] h-auto mt-4'
+                        className='w-full sm:w-1/2 border border-white max-w-[560px] h-auto'
                     ></video>
                     <img 
                         src={clapping} 
-                        className='w-[270px] border border-white max-w-[560px] h-auto mt-4'
+                        className='w-full sm:w-1/2 border border-white max-w-[560px] h-auto'
+                        alt="Thunder clapping"
                     />
                 </div>
             </div>
-            <img src={move} alt="zenitsu slay" />
+            <img src={move} alt="zenitsu slay" className="hidden lg:block lg:w-1/2 object-contain" />
             <img 
                 src={imageToAnimate} 
                 alt="Animated on scroll" 
                 style={{
                     position: 'absolute', 
                     bottom: 0, 
-                    right:0,
-                    left: `${100 - imagePosition}%`, // Déplacer l'image de droite à gauche
-                    transform: 'translateX(0%)', 
+                    left: `${100 - imagePosition}%`,
                     transition: 'left 0.001s ease-out', 
                 }}
-                className="w-[800px] h-auto z-20"
+                className="w-1/2 sm:w-1/3 lg:w-[800px] h-auto z-20"
             />
         </div>
     );

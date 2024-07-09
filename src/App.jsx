@@ -3,9 +3,9 @@ import HomePage from './view/Homepage';
 import './App.css';
 import Navbar from './components/Navbar';
 import Zenitsu from './view/Zenitsu';
-import moon from './assets/videos/moon.gif';
 import ThunderBreathing from './view/Thunder_breathing';
-import Relations from './view/Relations';
+import Facts from './view/Facts';
+import Footer from './view/Footer';
 
 function App() {
   return (
@@ -20,8 +20,11 @@ function App() {
       <div id='thunderbreathing'>
         <ThunderBreathing />
       </div>
-      <div id='relations'>
-        <Relations />
+      <div id='facts'>
+        <Facts />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

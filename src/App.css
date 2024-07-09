@@ -17,6 +17,23 @@
   url("https://db.onlinewebfonts.com/t/fcfdd2ded1fd53686a3ff00a019bbe0b.ttf")format("truetype"),
   url("https://db.onlinewebfonts.com/t/fcfdd2ded1fd53686a3ff00a019bbe0b.svg#electrical")format("svg");
 }
+.fill-white {
+    fill: white;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-triangle {
+  animation: rotate 5s linear infinite;
+}
+
 
 html {
   scroll-behavior: smooth;
