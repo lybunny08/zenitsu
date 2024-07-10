@@ -64,7 +64,7 @@ function Navbar() {
       {isMenuOpen && (
         <div className="fixed inset-0 flex flex-col z-40 bg-white bg-opacity-75 backdrop-blur-md transition-transform duration-500 ease-in-out">
           <img src={logo} alt="" className='absolute m-2 w-[90px] h-[90px]' />
-          <div className='flex flex-col text-[25px] pt-[100px] lg:pt-[150px] m-9 space-y-4'>
+          <div className='flex flex-col items-end pr-8 text-[25px] pt-[100px] lg:pt-[150px] space-y-4'>
             <a href="#homepage" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Home</a>
             <a href="#zenitsu" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Zenitsu</a>
             <a href="#thunderbreathing" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Thunder Breathing</a>
@@ -72,7 +72,7 @@ function Navbar() {
             {/* <a href="#arc4" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Hashira Training Arc</a>
             <a href="#infinite-castle" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Infinity Castle</a> */}
           </div>
-          <div className='absolute bottom-8 text-[48px] lg:text-[95px] right-4 text-black text-lg'>
+          <div className='absolute bottom-8 text-[48px] lg:text-[95px] left-0 text-black text-lg'>
             <span>@mamitiana</span>
           </div>
         </div>
