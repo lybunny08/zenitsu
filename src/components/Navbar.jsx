@@ -48,7 +48,7 @@ function Navbar() {
     <div className='fixed top-0 left-0 right-0 m-6 flex items-center justify-end z-50'>
       {/* Afficher le bouton de lecture/pause seulement lorsque le menu est fermé */}
       {!isMenuOpen && (
-        <div className='flex flex-row items-center '>
+        <div className='flex flex-row items-center pr-2'>
           <button 
             className='play-button flex items-center justify-center rounded-full bg-yellow-400 p-[0.1px]'
             onClick={handlePlayPause}
