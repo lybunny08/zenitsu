@@ -48,10 +48,47 @@ function Facts() {
         }
     }, [isVisible]);
 
+    // Fonction pour générer les triangles aléatoires
+    const generateRandomTriangles = () => {
+        const triangles = [];
+        const numTriangles = 400; // Beaucoup plus de triangles
+
+        for (let i = 0; i < numTriangles; i++) {
+            const size = Math.random() * 30 + 5; // Taille aléatoire entre 5 et 35px
+            const top = Math.random() * 100; // Position verticale aléatoire
+            const left = Math.random() * 100; // Position horizontale aléatoire
+            const rotation = Math.random() * 360; // Rotation aléatoire
+            const opacity = Math.random() * 0.15 + 0.05; // Opacité aléatoire entre 0.05 et 0.2
+
+            triangles.push(
+                <div
+                    key={i}
+                    style={{
+                        position: 'absolute',
+                        top: `${top}%`,
+                        left: `${left}%`,
+                        width: '0',
+                        height: '0',
+                        borderLeft: `${size / 2}px solid transparent`,
+                        borderRight: `${size / 2}px solid transparent`,
+                        borderBottom: `${size}px solid rgba(255, 255, 255, ${opacity})`,
+                        transform: `rotate(${rotation}deg)`,
+                        zIndex: 1,
+                        pointerEvents: 'none', // Pour éviter d'interférer avec les interactions utilisateur
+                    }}
+                />
+            );
+        }
+
+        return triangles;
+    };
+
     return (
         <div className='relative min-h-screen bg-[#FFA500]' ref={factsRef}>
-            {/* Arrière-plan avec opacité réduite */}
-            {/* <div className='absolute inset-0 bg-[#FFA500] opacity-70'></div> */}
+            {/* Arrière-plan avec triangles aléatoires */}
+            <div className='absolute inset-0 overflow-hidden'>
+                {generateRandomTriangles()}
+            </div>
             
             {/* Contenu principal */}
             <div className='relative z-10 flex flex-col pt-[120px] lg:pt-[160px] px-10'>
@@ -69,8 +106,7 @@ function Facts() {
                             <span className="block sm:inline"> would protect them from harm.</span>
                         </p>
                     </div>
-                    <div className="relative">
-                        <img src={zenitsujigoro} alt="" className='h-[280px] lg:w-[500px]'/>
+                    <div className="relative ">
                         <div 
                             className='absolute top-1/2 -right-12 sm:bottom-20 sm:-right-[200px] z-10 rotating-triangle transform -translate-y-1/2 sm:translate-y-0'
                             style={{
@@ -90,7 +126,7 @@ function Facts() {
                     ref={samouraiRef}
                     src={samorai} 
                     alt="Samorai" 
-                    className='absolute left-0 bottom-[-40px] lg:bottom-[-80px] h-[400px] lg:h-[600px] w-auto object-contain'
+                    className='absolute left-0 bottom-[-40px] lg:bottom-[-300px] h-[400px] lg:h-[600px] w-auto object-contain'
                 />
             </div>
         </div>
