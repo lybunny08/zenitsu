@@ -72,7 +72,7 @@ function Navbar() {
             {/* <a href="#arc4" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Hashira Training Arc</a>
             <a href="#infinite-castle" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Infinity Castle</a> */}
           </div>
-          <div className='absolute bottom-8 text-[35px] lg:text-[95px] right-4 text-black text-lg'>
+          <div className='absolute bottom-8 text-[48px] lg:text-[95px] right-4 text-black text-lg'>
             <span>@mamitiana</span>
           </div>
         </div>
