@@ -48,7 +48,7 @@ function Navbar() {
     <div className='fixed top-0 left-0 right-0 m-6 flex items-center justify-end z-50'>
       {/* Afficher le bouton de lecture/pause seulement lorsque le menu est fermé */}
       {!isMenuOpen && (
-        <div className='flex flex-row items-center pr-2'>
+        <div className='flex flex-row items-center '>
           <button 
             className='play-button flex items-center justify-center rounded-full bg-yellow-400 p-[0.1px]'
             onClick={handlePlayPause}
@@ -64,7 +64,7 @@ function Navbar() {
       {isMenuOpen && (
         <div className="fixed inset-0 flex flex-col z-40 bg-white bg-opacity-75 backdrop-blur-md transition-transform duration-500 ease-in-out">
           <img src={logo} alt="" className='absolute m-2 w-[90px] h-[90px]' />
-          <div className='flex flex-col text-[25px] pt-[100px] lg:pt-[150px] m-9 space-y-6'>
+          <div className='flex flex-col text-[25px] pt-[100px] lg:pt-[150px] m-9 space-y-4'>
             <a href="#homepage" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Home</a>
             <a href="#zenitsu" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Zenitsu</a>
             <a href="#thunderbreathing" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Thunder Breathing</a>
@@ -72,7 +72,7 @@ function Navbar() {
             {/* <a href="#arc4" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Hashira Training Arc</a>
             <a href="#infinite-castle" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Infinity Castle</a> */}
           </div>
-          <div className='absolute bottom-8 text-[45px] lg:text-[95px] right-4 text-black text-lg'>
+          <div className='absolute bottom-8 text-[35px] lg:text-[95px] right-4 text-black text-lg'>
             <span>@mamitiana</span>
           </div>
         </div>
