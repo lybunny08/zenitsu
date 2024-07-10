@@ -49,7 +49,7 @@ function ThunderBreathing() {
 
     return (
         <div 
-            className="flex flex-col lg:flex-row relative overflow-hidden bg-cover bg-center min-h-screen"
+            className="flex flex-col lg:flex-row pb-10 relative overflow-hidden bg-cover bg-center min-h-screen"
             ref={sectionRef}
             style={{ 
                 backgroundImage: `url(${moon})`,
@@ -58,7 +58,7 @@ function ThunderBreathing() {
                 backgroundRepeat: 'no-repeat',
             }}
         >
-            <div className='absolute flex flex-row w-full justify-between text-white font-bold opacity-40 text-2xl sm:text-4xl lg:text-[70px] px-2 sm:px-4 pt-4 sm:pt-[30px]'>
+            <div className='absolute flex flex-row w-full justify-between text-white py-[80px] lg:py-[100px] font-bold opacity-40 text-4xl lg:text-[70px] px-2'>
                 <div className='flex flex-col lg:space-y-20 lg:pt-14'>
                     <p>我</p><p>あ</p><p>が</p><p>妻</p><p>つ</p><p>ま</p>
                 </div>
@@ -68,7 +68,7 @@ function ThunderBreathing() {
             </div>
             <div className='px-4 lg:ml-[100px] lg:w-1/2 z-10'>
                 <h1 className='font-elektronik text-white text-3xl sm:text-5xl lg:text-[80px] pt-[90px] relative'>Lightning breath style</h1>
-                <p className='text-left text-white text-sm sm:text-base lg:text-lg pt-4 sm:pt-[50px]'>
+                <p className='text-left md:text-white lg:text-white text-sm sm:text-base lg:text-lg pt-[40px] sm:pt-[50px]'>
                     Zenitsu uses the Lightning Breath as his fighting technique. 
                     He only knows how to make the first move, but manages to outmaneuver his enemies.
                 </p>

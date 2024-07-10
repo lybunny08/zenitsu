@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import '../App.css';
 import samorai from '../assets/samorai.png';
-import zenitsujigoro from '../assets/zenitsujogoro.png';
 import gsap from 'gsap';
 
 function Facts() {
@@ -84,7 +83,7 @@ function Facts() {
     };
 
     return (
-        <div className='relative min-h-screen bg-[#FFA500]' ref={factsRef}>
+        <div className='relative h-screen bg-[#FFA500]' ref={factsRef}>
             {/* Arrière-plan avec triangles aléatoires */}
             <div className='absolute inset-0 overflow-hidden'>
                 {generateRandomTriangles()}
@@ -126,7 +125,7 @@ function Facts() {
                     ref={samouraiRef}
                     src={samorai} 
                     alt="Samorai" 
-                    className='absolute left-0 bottom-[-40px] lg:bottom-[-300px] h-[400px] lg:h-[600px] w-auto object-contain'
+                    className='absolute -left-20 lg:left-0 lg:bottom-[-300px] h-[400px] lg:h-[600px] w-auto object-contain'
                 />
             </div>
         </div>

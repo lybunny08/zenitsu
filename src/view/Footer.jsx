@@ -39,7 +39,7 @@ function Footer() {
   };
 
   return (
-    <div className="bg-[#FFA500] min-h-screen flex flex-col justify-end p-10 relative overflow-hidden">
+    <div className="bg-[#FFA500] h-[400px] lg:h-screen flex flex-col justify-end px-10 relative overflow-hidden">
       {/* Arrière-plan avec triangles aléatoires */}
       <div className='absolute inset-0 overflow-hidden'>
         {generateRandomTriangles()}
@@ -48,23 +48,30 @@ function Footer() {
       {/* Contenu principal */}
       <div className='relative z-10'>
         <div className='text-right'>
-          <p>This web is created on Reactjs and GSAP for the animation;</p>
-          <p>and there is my contact if you wanna build a website</p>
+          <p className='lg:hidden'>
+            This web is created on Reactjs and GSAP for the animation; and there is my contact if you wanna build a website
+          </p>
+          <div className='hidden lg:block'>
+            <p>This web is created on Reactjs and GSAP for the animation;</p>
+            <p>and there is my contact if you wanna build a website</p>
+          </div>
         </div>
-        <div className='flex flex-row justify-between items-end mb-2'>
+        <div>
+        <div className='flex flex-col lg:flex-row justify-between lg:items-end mb-2'>
           <div className='flex items-end'>
-            <img src={profile} alt="profile" className='border border-white rounded-full w-[200px] h-[200px]' />
-            <div className='flex flex-col text-left text-4xl ml-4'>
+            <img src={profile} alt="profile" className='border border-white rounded-full w-[120px] h-[120px] lg:w-[200px] lg:h-[200px]' />
+            <div className='flex flex-col text-left lg:text-4xl ml-4'>
               <p>Mamitiana</p>
               <p>HAJANIAINA</p>
             </div>
           </div>
-          <div className='flex justify-end space-x-4 text-2xl'>
+          <div className='flex flex-row space-x-4 mt-4 lg:space-x-4 items-end justify-end text-left lg:text-end lg:text-2xl'>
             <a href="https://www.linkedin.com/in/mamitiana-hajaniaina-b0b425270/" target="_blank" rel="noopener noreferrer" className="text-inherit no-underline">LinkedIn</a>
             <a href="https://www.facebook.com/mamtiana.lydien/" target="_blank" rel="noopener noreferrer" className="text-inherit no-underline">Facebook</a>
           </div>
         </div>
         <div className='text-6xl lg:text-[210px] text-center'>@mamitiana</div>
+        </div>
       </div>
     </div>
   );

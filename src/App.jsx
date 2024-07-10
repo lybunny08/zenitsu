@@ -29,7 +29,7 @@ function App() {
       <div id='homepage'>
         <HomePage />
       </div>
-      <div id='zenitsu' className='lg:mb-[100px]'>
+      <div id='zenitsu'>
         <Zenitsu />
       </div>
       <div id='thunderbreathing'>

@@ -67,16 +67,11 @@ html, body, #root {
   );
 }
 
-.footer-content {
-  /* Vos styles actuels pour le contenu du footer */
-}
-
-
-.homepage {
+/* .homepage {
   width: 100%;
   height: 100%;
   display: flex;
-}
+} */
 
 .video-container iframe {
   pointer-events: none;
@@ -106,14 +101,14 @@ html, body, #root {
 }
 
 /* App.css ou Zenitsu.css */
-#zenitsu {
+/*#zenitsu {
   background-image: url('/path/to/your/zenitsu.png'); /* Assurez-vous que le chemin est correct */
   /* background-position: top center; */
-  background-size: cover; /* Couvre toute la section */
-  background-repeat: no-repeat; /* Évite la répétition de l'image */
-  background-attachment: fixed; /* Fixe l'image lors du défilement */
-  height: 100vh; /* Hauteur de la section à 100% de la vue */
-}
+  /*background-size: cover; /* Couvre toute la section */
+  /*background-repeat: no-repeat; /* Évite la répétition de l'image */
+  /*background-attachment: fixed; /* Fixe l'image lors du défilement */
+  /*height: 100vh; /* Hauteur de la section à 100% de la vue */
+/*}*/
 
 
 
