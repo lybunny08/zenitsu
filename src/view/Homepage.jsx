@@ -31,7 +31,7 @@ function HomePage() {
       />
 
       <div className="flex-1 bg-black flex lg:pt-[80px] min-h-[50vh] min-h-screen">
-        <div id='zen' className="flex flex-row font-electrical text-[#FFA500] text-5xl pl-4 md:text-6xl lg:text-[120px]">
+        <div id='zen' className="flex flex-row font-electrical text-yellow-400 text-5xl pl-4 md:text-6xl lg:text-[120px]">
           <p id='z'>Z</p>
           <p id='e'>E</p>
           <p id='n'>N</p>
@@ -44,7 +44,7 @@ function HomePage() {
         className="absolute top-0 left-0 w-full h-full object-cover z-10"
       />
 
-      <div className="flex-1 bg-[#FFA500] flex justify-center lg:pt-[80px] lg:justify-end min-h-screen">
+      <div className="flex-1 bg-yellow-400 flex justify-center lg:pt-[80px] lg:justify-end min-h-screen">
         <div className="flex flex-row font-electrical text-black text-5xl pl-8 lg:pr-4 md:text-6xl lg:text-[120px]">
           <p id='i'>I</p>
           <p id='t'>T</p>

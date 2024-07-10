@@ -67,7 +67,7 @@ function Navbar() {
           <div className='flex flex-col items-end pr-8 text-[25px] pt-[100px] lg:pt-[150px] space-y-4'>
             <a href="#homepage" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Home</a>
             <a href="#zenitsu" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Zenitsu</a>
-            <a href="#thunderbreathing" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Thunder Breathing</a>
+            <a href="#thunderbreathing" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Lightning Breath</a>
             <a href="#facts" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Interesting facts</a>
             {/* <a href="#arc4" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Hashira Training Arc</a>
             <a href="#infinite-castle" onClick={() => setIsMenuOpen(false)} className="text-black hover:text-yellow-500">Infinity Castle</a> */}
